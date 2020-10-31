@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import './App.css';
 import Post from './Post';
 import { db } from './firebase';
-import Signupform from './Signupform'
+import Forms from './Forms';
 
 function App() {
   const [posts, SetPosts] = useState([])
@@ -24,7 +24,7 @@ function App() {
         />
       </div>
       <div>
-        <Signupform/>
+        <Forms/>
         {posts && posts.map(({id,post})=>
           <Post username={post.username} caption={post.caption} imgUrl={post.imgUrl} key={id} />
         )}
