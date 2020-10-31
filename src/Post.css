@@ -1,0 +1,7 @@
+.Post__Image{
+    width: 100%;
+    object-fit: contain;
+}
+.Post__Description{
+    font-weight: normal;
+}
